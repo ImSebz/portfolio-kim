@@ -82,15 +82,54 @@
 .skill-grid b {
   color: var(--peach);
 }
-.bodytech-video-slot {
+.bodytech-video-wrap {
   display: flex;
-  min-height: 620px;
+  flex-direction: column;
+  align-self: start;
+  height: 100%;
+  outline: none;
+}
+.bodytech-video-slot {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+  min-height: 0;
+  border: 1px solid rgba(255, 250, 244, 0.35);
+  background: #1a0708;
+  overflow: hidden;
+}
+.bodytech-video {
+  width: 65%;
+  height: 100%;
+  object-fit: cover;
+  background: #1a0708;
+  cursor: pointer;
+}
+.video-play-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  border: 1px solid rgba(255, 250, 244, 0.35);
-  background: radial-gradient(circle at center, #8f302e 0, #3b1011 72%);
+  border: none;
+  background: radial-gradient(
+    circle at center,
+    rgba(143, 48, 46, 0.6) 0,
+    rgba(59, 16, 17, 0.82) 72%
+  );
+  color: var(--white);
+  cursor: pointer;
   text-align: center;
+  transition: background 0.3s ease;
+}
+.video-play-overlay:hover {
+  background: radial-gradient(
+    circle at center,
+    rgba(143, 48, 46, 0.75) 0,
+    rgba(59, 16, 17, 0.88) 72%
+  );
 }
 .play-mark {
   display: grid;
@@ -103,16 +142,82 @@
   color: var(--peach);
   font-size: 1.4rem;
 }
-.bodytech-video-slot p {
+.video-play-overlay p {
   font-size: 1.05rem;
   font-weight: 700;
   letter-spacing: 0.12em;
 }
-.bodytech-video-slot small {
+.video-play-overlay small {
   margin-top: 8px;
   color: var(--peach);
   font-size: 0.68rem;
   text-transform: uppercase;
+}
+.video-nav {
+  display: flex;
+  flex: none;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 18px;
+  padding-top: 18px;
+  border-top: 1px solid rgba(255, 250, 244, 0.35);
+}
+.video-arrow {
+  display: grid;
+  flex: none;
+  width: 40px;
+  height: 40px;
+  place-items: center;
+  border: 1px solid rgba(255, 250, 244, 0.45);
+  border-radius: 50%;
+  background: rgba(26, 7, 8, 0.4);
+  color: var(--white);
+  cursor: pointer;
+  transition: border-color 0.25s ease, color 0.25s ease, transform 0.25s ease;
+}
+.video-arrow svg {
+  width: 16px;
+  height: 16px;
+}
+.video-arrow:hover {
+  border-color: var(--peach);
+  color: var(--peach);
+  transform: translateY(-2px);
+}
+.video-arrow:active {
+  transform: translateY(0) scale(0.92);
+}
+.video-dots {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.video-dot {
+  width: 8px;
+  height: 8px;
+  padding: 0;
+  border: none;
+  border-radius: 50%;
+  background: rgba(255, 250, 244, 0.35);
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+.video-dot.is-active {
+  background: var(--peach);
+  box-shadow: 0 0 0 5px rgba(255, 200, 170, 0.18);
+  transform: scale(1.2);
+}
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
 @media (max-width: 1000px) {
@@ -122,8 +227,8 @@
   .management-layout {
     grid-template-columns: 1fr;
   }
-  .bodytech-video-slot {
-    min-height: 440px;
+  .bodytech-video-wrap {
+    height: 380px;
   }
 }
 @media (max-width: 700px) {
@@ -149,7 +254,7 @@
   .skill-grid {
     grid-template-columns: 1fr;
   }
-  .bodytech-video-slot {
-    min-height: 330px;
+  .bodytech-video-wrap {
+    height: 280px;
   }
 }
