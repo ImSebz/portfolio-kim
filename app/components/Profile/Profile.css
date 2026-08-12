@@ -1,0 +1,71 @@
+.profile {
+  padding: 125px 13vw;
+  background: var(--acid);
+  text-align: center;
+}
+.kicker {
+  color: var(--red);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.profile .kicker {
+  margin-bottom: 28px;
+}
+.profile h2 {
+  font-size: clamp(3.2rem, 6vw, 6.4rem);
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  line-height: 0.92;
+}
+.profile h2 em {
+  color: var(--red);
+  font-weight: 400;
+}
+.profile-copy {
+  max-width: 1050px;
+  margin: auto;
+}
+.profile-copy > p:not(.kicker) {
+  max-width: 720px;
+  margin: 35px auto 0;
+  line-height: 1.75;
+}
+.profile-facts {
+  display: grid;
+  max-width: 650px;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin: 50px auto 0;
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+}
+.profile-facts div {
+  display: flex;
+  padding: 28px;
+  flex-direction: column;
+  border-right: 1px solid var(--ink);
+}
+.profile-facts div:last-child {
+  border-right: 0;
+}
+.profile-facts strong {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+.profile-facts span {
+  font-size: 0.62rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 700px) {
+  .profile {
+    padding: 85px 20px;
+  }
+  .profile h2 {
+    font-size: 3rem;
+  }
+}

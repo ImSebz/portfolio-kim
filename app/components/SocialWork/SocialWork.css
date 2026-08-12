@@ -1,0 +1,119 @@
+.social-work {
+  padding: 120px 5vw;
+  background: var(--white);
+}
+.section-heading {
+  display: grid;
+  gap: 20px;
+  margin-bottom: 65px;
+}
+.kicker {
+  color: var(--red);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.section-heading h2 {
+  font-size: clamp(3.2rem, 6vw, 6.4rem);
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  line-height: 0.92;
+  text-align: center;
+}
+.section-heading h2 em {
+  color: var(--red);
+  font-weight: 400;
+}
+.social-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.social-grid article {
+  display: grid;
+  grid-template-rows: minmax(430px, 1fr) auto;
+  border: 1px solid var(--ink);
+}
+.social-logo-visual {
+  display: grid;
+  min-height: 430px;
+  padding: 65px;
+  place-items: center;
+  background: var(--paper);
+}
+.social-logo-visual img {
+  width: 100%;
+  height: 260px;
+  object-fit: contain;
+}
+.social-copy {
+  padding: 38px;
+}
+.case-index {
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.social-copy .case-index {
+  color: var(--red);
+}
+.social-copy h3 {
+  margin: 18px 0;
+  font-size: clamp(2.1rem, 3.4vw, 3.8rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 0.96;
+}
+.social-copy > p:not(.case-index) {
+  color: rgba(29, 24, 21, 0.68);
+  line-height: 1.65;
+}
+.social-copy > a,
+.project-links a {
+  display: inline-block;
+  margin-top: 25px;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+.project-links {
+  display: flex;
+  gap: 22px;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 1000px) {
+  .section-heading {
+    grid-template-columns: 1fr;
+  }
+  .social-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 700px) {
+  .social-work {
+    padding: 85px 20px;
+  }
+  .section-heading {
+    margin-bottom: 45px;
+  }
+  .section-heading h2 {
+    font-size: 3rem;
+  }
+  .social-grid article {
+    grid-template-rows: minmax(320px, auto) auto;
+  }
+  .social-logo-visual {
+    min-height: 320px;
+    padding: 35px;
+  }
+  .social-logo-visual img {
+    height: 210px;
+  }
+  .social-copy {
+    padding: 28px;
+  }
+}

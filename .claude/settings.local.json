@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node -e \"console.log\\(process.version\\)\")",
+      "Bash(npx vite *)",
+      "Bash(timeout 15 npm run dev)",
+      "Bash(curl -s http://localhost:5173/)",
+      "Bash(netstat -ano)",
+      "Bash(node -e \"console.log\\(require\\('fs'\\).existsSync\\('node_modules/sharp'\\)\\)\")",
+      "Bash(node -e ' *)"
+    ]
+  }
+}

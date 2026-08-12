@@ -1,0 +1,87 @@
+.brand-proof {
+  padding: 110px 5vw 125px;
+}
+.brand-proof-heading {
+  display: grid;
+  grid-template-columns: 0.48fr 1.52fr;
+  gap: 30px;
+  margin-bottom: 65px;
+}
+.kicker {
+  color: var(--red);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.brand-proof h2 {
+  font-size: clamp(3.2rem, 6vw, 6.4rem);
+  font-weight: 500;
+  letter-spacing: -0.06em;
+  line-height: 0.92;
+}
+.brand-proof h2 em {
+  color: var(--red);
+  font-weight: 400;
+}
+.brand-logo-wall {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--ink);
+  border-left: 1px solid var(--ink);
+}
+.logo-card,
+.logo-fallback {
+  display: grid;
+  min-height: 135px;
+  padding: 24px;
+  place-items: center;
+  border-right: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  background: var(--white);
+}
+.logo-card img {
+  height: 100px;
+  max-width: 200px;
+  object-fit: contain;
+}
+.logo-card-dark {
+  background: #151515;
+}
+.logo-fallback {
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 1000px) {
+  .brand-proof-heading {
+    grid-template-columns: 1fr;
+  }
+  .brand-logo-wall {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 700px) {
+  .brand-proof {
+    padding: 85px 20px;
+  }
+  .brand-proof-heading {
+    margin-bottom: 45px;
+  }
+  .brand-proof h2 {
+    font-size: 3rem;
+  }
+  .brand-logo-wall {
+    grid-template-columns: 1fr 1fr;
+  }
+  .logo-card,
+  .logo-fallback {
+    min-height: 100px;
+    padding: 14px;
+  }
+  .logo-card img {
+    height: 58px;
+    max-width: 100%;
+  }
+}
