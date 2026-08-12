@@ -9,8 +9,8 @@
   font-weight: 700;
 }
 footer {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   min-height: 100px;
   padding: 22px 4vw;
