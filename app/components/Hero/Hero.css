@@ -22,7 +22,7 @@
 }
 .hero-copy h1 {
   font-size: clamp(5rem, 9vw, 9.5rem);
-  font-weight: 500;
+  font-weight: 400;
   letter-spacing: -0.075em;
   line-height: 0.74;
 }
