@@ -17,12 +17,11 @@ Código fuente completo de la landing de portafolio profesional de Kimberly Puli
 - React 19
 - Next.js 16
 - TypeScript
-- Vinext / Vite
 - Tailwind CSS 4
 
 ## Requisitos
 
-- Node.js 22.13 o superior
+- Node.js 20 o superior
 - npm
 
 ## Ejecutar en desarrollo
