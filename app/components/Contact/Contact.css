@@ -18,8 +18,9 @@
 .contact h2 em {
   color: var(--peach);
   font-weight: 400;
-  margin-top: -75px;
+  margin-top: -0.2em;
   display: block;
+  line-height: 1;
 }
 .contact-links {
   display: flex;
