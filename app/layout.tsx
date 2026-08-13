@@ -11,7 +11,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Kimberly Pulido | Marketing, Moda y Belleza",
+  title: "Kimberly Pulido | Portafolio Personal",
   description:
     "Portafolio de Kimberly Pulido: estrategia de marketing, campañas, experiencias, moda, belleza y colaboraciones de contenido.",
   other: {
