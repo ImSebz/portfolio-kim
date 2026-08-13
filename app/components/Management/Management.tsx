@@ -80,9 +80,13 @@ export function Management() {
           >
             {managementBrands.map((brand) => (
               <figure
-                className={
-                  brand.dark ? "management-logo logo-card-dark" : "management-logo"
-                }
+                className={[
+                  "management-logo",
+                  brand.dark && "logo-card-dark",
+                  brand.large && "logo-card-large",
+                ]
+                  .filter(Boolean)
+                  .join(" ")}
                 key={brand.name}
               >
                 <img src={brand.src} alt={`Logo de ${brand.name}`} />

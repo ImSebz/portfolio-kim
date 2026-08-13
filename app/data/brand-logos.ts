@@ -2,6 +2,7 @@ export type BrandLogo = {
   name: string;
   src: string;
   dark?: boolean;
+  large?: boolean;
 };
 
 export const brandLogos: BrandLogo[] = [
@@ -26,6 +27,8 @@ export const brandLogos: BrandLogo[] = [
   { name: "DHEMS", src: "/brand-logos/dhems.png" },
   { name: "AHK Colombia", src: "/brand-logos/ahk.png" },
   { name: "Chalela Abogados", src: "/brand-logos/chalela-abogados.png" },
+  { name: "Bull Marketing", src: "/brand-logos/bull_marketing.png", large: true },
+  { name: "Aerorental", src: "/brand-logos/aerorental.png", large: true },
 ];
 
 const managementBrandNames = [
@@ -36,6 +39,8 @@ const managementBrandNames = [
   "Authentic Beauty Concept",
   "Tec Italy",
   "Kuul",
+  "Bull Marketing",
+  "Aerorental"
 ];
 
 export const managementBrands = brandLogos.filter((brand) =>
