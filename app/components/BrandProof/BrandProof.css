@@ -48,14 +48,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 24px;
 }
 .logo-card img {
   height: 100px;
   max-width: 200px;
   object-fit: contain;
 }
-.logo-card a img {
-  padding: 24px;
+.logo-card-large img {
+  height: 150px;
+  max-width: 280px;
 }
 .logo-hover {
   position: absolute;
@@ -116,11 +118,14 @@
     min-height: 100px;
     padding: 14px;
   }
+  .logo-card a {
+    padding: 14px;
+  }
   .logo-card img {
     height: 58px;
     max-width: 100%;
   }
-  .logo-card a img {
-    padding: 14px;
+  .logo-card-large img {
+    height: 82px;
   }
 }

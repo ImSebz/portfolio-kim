@@ -92,7 +92,7 @@
 .promo-stat {
   margin-top: 16px;
   color: var(--accent);
-  font-size: clamp(3rem, 5vw, 4.6rem);
+  font-size: clamp(3.6rem, 6vw, 5.6rem);
   font-weight: 500;
   line-height: 1;
   transition: color 0.5s ease;

@@ -1,13 +1,14 @@
 "use client";
 
 import { useState, type CSSProperties, type KeyboardEvent } from "react";
+import { CountUp } from "@/app/components/CountUp/CountUp";
 import "./DigitalExperiences.css";
 
 const promos = [
   {
     brand: "Budweiser",
     kicker: "BudX World Tour",
-    stat: "47.537",
+    stat: 47537,
     statLabel: "Registros totales",
     description:
       "Promo phigital que combinó interacción online y offline: los participantes acumulaban puntos Bud para redimir en un marketplace exclusivo con experiencias en Lollapalooza, Tomorrowland y los VMA.",
@@ -19,7 +20,7 @@ const promos = [
   {
     brand: "Stella Artois",
     kicker: "The Perfect Serve",
-    stat: "7.118",
+    stat: 7118,
     statLabel: "Registros totales",
     description:
       "Los participantes registraban sus facturas de compra y servían la cerveza en la copa icónica para sumar puntos y redimir premios exclusivos.",
@@ -31,7 +32,7 @@ const promos = [
   {
     brand: "Corona",
     kicker: "Paraísos Corona",
-    stat: "3.635",
+    stat: 3635,
     statLabel: "Registros totales",
     description:
       "Big Promo en la que los participantes sumaban puntos al registrar sus facturas de compra en puntos de venta autorizados, desbloqueando experiencias como Sunset Sessions.",
@@ -43,7 +44,7 @@ const promos = [
   {
     brand: "Newell Brands",
     kicker: "Expresa tus Colores",
-    stat: "5.731",
+    stat: 5731,
     statLabel: "Registros en 2 meses",
     description:
       "Promo Regreso al Cole con landing de participación y registro de compras para redención de premios, potenciando el sell out de Sharpie, Paper Mate y Prismacolor.",
@@ -107,7 +108,12 @@ export function DigitalExperiences() {
               >
                 <div className="promo-copy">
                   <p className="promo-kicker">{promo.kicker}</p>
-                  <span className="promo-stat">{promo.stat}</span>
+                  <CountUp
+                    className="promo-stat"
+                    value={promo.stat}
+                    active={i === index}
+                    duration={1800}
+                  />
                   <p className="promo-stat-label">{promo.statLabel}</p>
                   <h3>{promo.brand}</h3>
                   <p className="promo-description">{promo.description}</p>

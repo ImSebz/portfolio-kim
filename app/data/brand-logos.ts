@@ -10,6 +10,7 @@ export const brandLogos: BrandLogo[] = [
   {
     name: "Bodytech",
     src: "/brand-logos/bodytech.png",
+    large: true,
     instagram: "https://www.instagram.com/clubbodytech?igsi=MTAyYWZ0eWR1b3NxOQ==",
   },
   { name: "Mobil", src: "/brand-logos/mobil.png" },
@@ -17,11 +18,13 @@ export const brandLogos: BrandLogo[] = [
   {
     name: "Schwarzkopf Professional",
     src: "/brand-logos/schwarzkopf.png",
+    large: true,
     instagram: "https://www.instagram.com/schwarzkopfpro.co?igsi=MXIxNmhjcTcxdmhmdg==",
   },
   {
     name: "Authentic Beauty Concept",
     src: "/brand-logos/authentic-beauty-concept.png",
+    large: true,
     instagram:
       "https://www.instagram.com/authenticbeautyconcept.co?igsi=MTM0M2V2aWkwdHdkZg==",
   },
@@ -33,6 +36,7 @@ export const brandLogos: BrandLogo[] = [
   {
     name: "Kuul",
     src: "/brand-logos/kuul.png",
+    large: true,
     instagram: "https://www.instagram.com/kuulcolombia?igsi=MXJiMWt2dHZtcnA4Zw==",
   },
   { name: "Budweiser", src: "/brand-logos/budweiser.png" },

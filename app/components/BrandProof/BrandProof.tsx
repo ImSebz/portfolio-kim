@@ -15,7 +15,13 @@ export function BrandProof() {
       <div className="brand-logo-wall">
         {brandLogos.map((brand) => (
           <figure
-            className={brand.dark ? "logo-card logo-card-dark" : "logo-card"}
+            className={[
+              "logo-card",
+              brand.dark && "logo-card-dark",
+              brand.large && "logo-card-large",
+            ]
+              .filter(Boolean)
+              .join(" ")}
             key={brand.name}
           >
             {brand.instagram ? (

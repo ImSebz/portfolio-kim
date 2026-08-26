@@ -1,3 +1,4 @@
+import { CountUp } from "@/app/components/CountUp/CountUp";
 import "./Hero.css";
 
 export function Hero() {
@@ -16,11 +17,15 @@ export function Hero() {
         </p>
         <div className="hero-meta">
           <div>
-            <strong>7+</strong>
+            <strong>
+              <CountUp value={7} suffix="+" duration={1200} />
+            </strong>
             <span>años de experiencia</span>
           </div>
           <div>
-            <strong>15+</strong>
+            <strong>
+              <CountUp value={15} suffix="+" duration={1200} />
+            </strong>
             <span>marcas</span>
           </div>
           <a href="#proyectos">Ver proyectos ↓</a>
