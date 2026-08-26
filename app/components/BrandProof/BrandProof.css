@@ -32,6 +32,7 @@
 }
 .logo-card,
 .logo-fallback {
+  position: relative;
   display: grid;
   min-height: 135px;
   padding: 24px;
@@ -39,11 +40,46 @@
   border-right: 1px solid var(--ink);
   border-bottom: 1px solid var(--ink);
   background: var(--white);
+  overflow: hidden;
+}
+.logo-card a {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .logo-card img {
   height: 100px;
   max-width: 200px;
   object-fit: contain;
+}
+.logo-card a img {
+  padding: 24px;
+}
+.logo-hover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(29, 24, 21, 0.9);
+  color: var(--red);
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+.logo-card a:hover .logo-hover,
+.logo-card a:focus-visible .logo-hover {
+  opacity: 1;
+}
+.logo-card a:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: -4px;
 }
 .logo-card-dark {
   background: #151515;
@@ -83,5 +119,8 @@
   .logo-card img {
     height: 58px;
     max-width: 100%;
+  }
+  .logo-card a img {
+    padding: 14px;
   }
 }

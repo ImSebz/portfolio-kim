@@ -3,19 +3,38 @@ export type BrandLogo = {
   src: string;
   dark?: boolean;
   large?: boolean;
+  instagram?: string;
 };
 
 export const brandLogos: BrandLogo[] = [
-  { name: "Bodytech", src: "/brand-logos/bodytech.png" },
+  {
+    name: "Bodytech",
+    src: "/brand-logos/bodytech.png",
+    instagram: "https://www.instagram.com/clubbodytech?igsi=MTAyYWZ0eWR1b3NxOQ==",
+  },
   { name: "Mobil", src: "/brand-logos/mobil.png" },
   { name: "Terpel", src: "/brand-logos/terpel.png" },
-  { name: "Schwarzkopf Professional", src: "/brand-logos/schwarzkopf.png" },
+  {
+    name: "Schwarzkopf Professional",
+    src: "/brand-logos/schwarzkopf.png",
+    instagram: "https://www.instagram.com/schwarzkopfpro.co?igsi=MXIxNmhjcTcxdmhmdg==",
+  },
   {
     name: "Authentic Beauty Concept",
     src: "/brand-logos/authentic-beauty-concept.png",
+    instagram:
+      "https://www.instagram.com/authenticbeautyconcept.co?igsi=MTM0M2V2aWkwdHdkZg==",
   },
-  { name: "Tec Italy", src: "/brand-logos/tec-italy.png" },
-  { name: "Kuul", src: "/brand-logos/kuul.png" },
+  {
+    name: "Tec Italy",
+    src: "/brand-logos/tec-italy.png",
+    instagram: "https://www.instagram.com/tecitalyoficial.co?igsi=MXFiN3hhMHczaGR3Ng==",
+  },
+  {
+    name: "Kuul",
+    src: "/brand-logos/kuul.png",
+    instagram: "https://www.instagram.com/kuulcolombia?igsi=MXJiMWt2dHZtcnA4Zw==",
+  },
   { name: "Budweiser", src: "/brand-logos/budweiser.png" },
   { name: "Stella Artois", src: "/brand-logos/stella-artois.png" },
   { name: "Corona", src: "/brand-logos/corona.png" },
@@ -27,8 +46,18 @@ export const brandLogos: BrandLogo[] = [
   { name: "DHEMS", src: "/brand-logos/dhems.png" },
   { name: "AHK Colombia", src: "/brand-logos/ahk.png" },
   { name: "Chalela Abogados", src: "/brand-logos/chalela-abogados.png" },
-  { name: "Bull Marketing", src: "/brand-logos/bull_marketing.png", large: true },
-  { name: "Aerorental", src: "/brand-logos/aerorental.png", large: true },
+  {
+    name: "Bull Marketing",
+    src: "/brand-logos/bull_marketing.png",
+    large: true,
+    instagram: "https://www.instagram.com/bull_marketing?igsi=a2ZjNHE0cm9kc2lw",
+  },
+  {
+    name: "Aerorental",
+    src: "/brand-logos/aerorental.png",
+    large: true,
+    instagram: "https://www.instagram.com/aerorentalcolombia?igsi=MWJraDk3aHJiOXcxZw==",
+  },
 ];
 
 const managementBrandNames = [

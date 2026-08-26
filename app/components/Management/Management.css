@@ -42,6 +42,7 @@
 }
 .management-logo,
 .management-brand-wall .logo-fallback {
+  position: relative;
   display: grid;
   min-height: 105px;
   padding: 16px;
@@ -49,11 +50,46 @@
   border-right: 1px solid rgba(255, 250, 244, 0.35);
   border-bottom: 1px solid rgba(255, 250, 244, 0.35);
   background: var(--white);
+  overflow: hidden;
+}
+.management-logo a {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .management-logo img {
   width: 150px;
   height: 50px;
   object-fit: contain;
+}
+.management-logo a img {
+  padding: 16px;
+}
+.management-logo .logo-hover {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(29, 24, 21, 0.9);
+  color: var(--peach);
+  font-size: 0.66rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+}
+.management-logo a:hover .logo-hover,
+.management-logo a:focus-visible .logo-hover {
+  opacity: 1;
+}
+.management-logo a:focus-visible {
+  outline: 2px solid var(--peach);
+  outline-offset: -4px;
 }
 .logo-card-large img {
   width: 200px;
@@ -254,6 +290,9 @@
   }
   .management-logo img {
     height: 58px;
+  }
+  .management-logo a img {
+    padding: 14px;
   }
   .logo-card-large img {
     width: 150px;

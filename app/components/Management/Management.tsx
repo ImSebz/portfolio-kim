@@ -89,7 +89,21 @@ export function Management() {
                   .join(" ")}
                 key={brand.name}
               >
-                <img src={brand.src} alt={`Logo de ${brand.name}`} />
+                {brand.instagram ? (
+                  <a
+                    href={brand.instagram}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`Ver Instagram de ${brand.name}`}
+                  >
+                    <img src={brand.src} alt={`Logo de ${brand.name}`} />
+                    <span className="logo-hover" aria-hidden="true">
+                      Ver Instagram
+                    </span>
+                  </a>
+                ) : (
+                  <img src={brand.src} alt={`Logo de ${brand.name}`} />
+                )}
               </figure>
             ))}
           </div>
