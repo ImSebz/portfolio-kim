@@ -294,7 +294,7 @@
   }
   .logo-card-large img {
     width: 150px;
-    height: 100px;
+    height: 60px;
   }
   .skill-grid {
     grid-template-columns: 1fr;
