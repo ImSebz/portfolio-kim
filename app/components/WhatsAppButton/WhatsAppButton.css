@@ -8,10 +8,10 @@
   width: 62px;
   height: 62px;
   border-radius: 50%;
-  background: linear-gradient(145deg, #7d2524, #5a1718);
-  border: 1px solid rgba(255, 250, 244, 0.25);
-  box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.15);
-  color: var(--peach);
+  background: linear-gradient(145deg, #e7ee9e, var(--acid));
+  border: 1px solid rgba(29, 24, 21, 0.18);
+  box-shadow: 0 12px 28px -8px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(255, 255, 255, 0.35);
+  color: var(--wine);
   cursor: pointer;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
@@ -24,7 +24,7 @@
   transform: scale(0.96);
 }
 .whatsapp-float:focus-visible {
-  outline: 2px solid var(--peach);
+  outline: 2px solid var(--wine);
   outline-offset: 3px;
 }
 .whatsapp-icon {
@@ -37,7 +37,7 @@
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  background: #7d2524;
+  background: var(--acid);
   animation: whatsapp-pulse 2.2s cubic-bezier(0.3, 0, 0.4, 1) infinite;
 }
 @keyframes whatsapp-pulse {
