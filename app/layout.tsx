@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Poppins } from "next/font/google";
+import { WhatsAppButton } from "./components/WhatsAppButton/WhatsAppButton";
 import {
   contactEmail,
   linkedinUrl,
@@ -123,6 +124,7 @@ export default function RootLayout({
           dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
         />
         {children}
+        <WhatsAppButton />
       </body>
     </html>
   );
