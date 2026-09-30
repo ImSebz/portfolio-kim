@@ -95,7 +95,17 @@
     height: 28px;
   }
   .whatsapp-tooltip {
-    display: none;
+    right: calc(100% + 8px);
+    padding: 4px 9px;
+    background: rgba(29, 24, 21, 0.5);
+    color: var(--white);
+    font-size: 0.8rem;
+    font-weight: 600;
+    opacity: 1;
+    transform: translateY(-50%);
+  }
+  .whatsapp-tooltip::after {
+    background: rgba(29, 24, 21, 0.5);
   }
 }
 
