@@ -312,6 +312,13 @@
   .events-grid article {
     min-height: 300px;
   }
+  .event-brand-logo {
+    height: 52px;
+    margin-bottom: 18px;
+  }
+  .event-brand-logo img {
+    width: min(100%, 200px);
+  }
   .event-collage,
   .large-events .event-collage {
     max-width: 360px;
