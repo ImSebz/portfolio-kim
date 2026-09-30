@@ -300,6 +300,16 @@
     grid-template-columns: 1fr;
   }
   .bodytech-video-wrap {
-    height: 280px;
+    height: auto;
+  }
+  .bodytech-video-slot {
+    flex: none;
+  }
+  .bodytech-video {
+    display: block;
+    width: 100%;
+    height: auto;
+    max-height: 80vh;
+    object-fit: contain;
   }
 }
